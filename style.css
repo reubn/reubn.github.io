@@ -1,0 +1,158 @@
+@font-face
+{
+font-family: neutradistit;
+src: url('neutraface2displaytitling.otf')
+}
+@font-face
+{
+font-family: museosans;
+src: url('museosans.otf')
+}
+
+
+        body{
+            background-color: #fefefe;
+            color:#484746;
+            text-align:center;
+            font-family: 'museosans';
+            margin:0;
+            padding:0;
+            
+        }
+p {
+font-size: 2em;
+    
+}
+        #logo {
+            
+            
+            color: #F04831!important;
+            padding:0;
+            margin:0;
+            font-size: 6em;
+            font-family: 'neutradistit';
+        }
+        #logoeven{
+            color: #fefefe!important;
+            padding:0;
+            margin:0;
+        }
+        a {
+            padding:0;
+            margin:0;
+            text-decoration:none;
+            color:#F04831!important;
+        }
+
+.slide {
+    position:relative;
+    width: 100%;
+    height:33.333%;
+    
+    
+
+}
+ h1{
+font-family:museosans, sans-serif;
+font-size:2em;
+}
+
+#feedone {
+    -webkit-transition: all 0.5s ease-in-out;
+            height:150px;
+            font-size: 0!important;
+            overflow:hidden;
+    margin:8px;
+
+}
+.biginst {
+    -webkit-transition: all 0.5s ease-in-out;
+height:750px!important;
+}
+.instimg{
+    border-radius: 50%;
+}
+
+.title {
+text-transform:uppercase;
+    color:#F04831;
+    font-size:1em;
+    padding:0;
+    margin:0;
+}
+footer {
+    width:100%!important;
+    background-color:#484746;
+    color:#fefefe;
+    margin-top:50px;
+    font-size:1em;
+    text-transform:uppercase;
+    
+    
+    }
+#instdown {
+cursor:pointer;
+}
+.img {
+border-radius:1%;
+width: 50%;
+height:50%;
+}
+
+
+#slide1 {    
+background:url(img/header/rotate.php) no-repeat;
+
+      color:#fefefe;
+    border-bottom:solid 10px;
+    border-bottom-color:#F04831;
+}
+#slide2{
+top:33.333%;
+}
+
+#slide1 p {
+            padding:2%;
+            margin:2%;
+    
+    }
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+/* Styles */
+#slide1 {
+    background:url(img/headers/rotate.php) no-repeat;
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+
+
+
+}
+    
+    
+    }
+
+/* Smartphones (landscape) ----------- */
+@media only screen 
+and (min-width : 321px) {
+/* Styles */
+    
+    
+    
+    #logo {
+            
+            padding:0!important;
+            margin:0!important;
+            
+        }
+    #slide1 p {
+    margin:0;
+    padding:0;
+    
+    }
+}
