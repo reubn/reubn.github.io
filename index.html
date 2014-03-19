@@ -1,74 +1,45 @@
-<!doctype html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>Reubn</title>
-    <link rel="stylesheet" type="text/css" href="other.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-    <script src="js/instafeed.min.js"></script>
-    
-    
+    <title>Index of reubn.tk</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
-<body><div id="slide1" class="slide">
-    
-<div id="logo">R<span id="logoeven">E</span>U<span id="logoeven">B</span>N</div>
-    
-<p>To put it simply. I'm a designer.</p>
-    <div class="face">
-				</div>
-        </div>
-    <div id="slide2" class="slide">
-        
-        <p>&#8220;While I wouldn't consider myself to be a photographer, it's definitely one of hobbies I spend the most time on.&#8221;</p>
-         <p class="title">Instagram</p>
-    <div class="" id="feedone"></div>
-     <button class="btn btn-large btn-primary" id="instdown">More</button>   
-      </div>  
-        
-        
-        
-        
-        
-    <div id="slide3" class="slide">
-        <p>&#8220;I still have a great deal to learn but here is some of my work.&#8221;</p>
-         <p class="title">The Web</p>
-    <div class="" id=""><p>Transit</p>
-        <div class="md-device md-device-1">
-							<a href="#"><img src="img/transit.png" /></a>
-							<div class="md-border-element"></div>
-							<div class="md-base-element"></div>
-						</div>
-        
-        <p class="rightt">&#8220;Transit is a real life game where you run around collecing points in order to keep your self fit and healthy.&#8221</p>
-        </div>
-   
-        
-        
-   
+
+<body>
+    <div class="wrapper">
+        <!-- we open the `wrapper` element here, but close it in the `footer.html` file -->
+        <table id="indexlist">
+            
+            <tr class="indexhead">
+                <th class="indexcolicon">
+                    <img src="blank.png" alt="[ICO]" />
+                </th>
+                <th class="indexcolname">
+                    Name
+                </th>
+                <th class="indexcollastmod">
+                    Last modified
+                </th>
+                <th class="indexcolsize">
+                    Size
+                </th>
+            </tr>
+            
+            
+        </table>
+
+    </div>
+    <!--/.wrapper-->
+
+    <div class="footer">
+        Hackpaxy by @adamwhitcroft and @reubn
+    </div>
+    <!--/.footer-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
     <script>
-    $("#instdown").click(function() {
-    $("#feedone").toggleClass('biginst');
-        $('html, body').animate({
-         scrollTop: $("#feedone").offset().top
-     }, 500);
-        if ($("#instdown").text() == "More")
-       $(this).text("Less")
-    else
-       $(this).text("More");
-});</script>
-<script type="text/javascript">
-    var userFeed = new Instafeed({
-        get: 'user',
-        userId: 217395436,
-        accessToken: '217395436.467ede5.d89832d915a24d70a9abf6e396b82d37',
-        limit: -1,
-        template: '<a href="{{link}}"><img class="instimg" src="{{image}}" /></a>',
-        target: 'feedone',
-        sortBy: 'most-liked',
-    });
-    userFeed.run();
-    
-</script>
+        $('tr:nth-child(2)').addClass('parent');
+    </script>
 </body>
+
 </html>
+
