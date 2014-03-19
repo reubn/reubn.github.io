@@ -1,56 +1,45 @@
-<!doctype html>
 <html>
-
 <head>
-    <meta charset="UTF-8">
-    <title>Reubn</title>
-    <link rel="stylesheet" type="text/css" href="css/other.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" media="screen" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Index of reubn.tk</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
 </head>
 
 <body>
-    <div class="header">
+    <div class="wrapper">
+        <!-- we open the `wrapper` element here, but close it in the `footer.html` file -->
+        <table id="indexlist">
+            
+            <tr class="indexhead">
+                <th class="indexcolicon">
+                    <img src="blank.png" alt="[ICO]" />
+                </th>
+                <th class="indexcolname">
+                    Name
+                </th>
+                <th class="indexcollastmod">
+                    Last modified
+                </th>
+                <th class="indexcolsize">
+                    Size
+                </th>
+            </tr>
+            
+            
+        </table>
 
-        <div id="logo">R<span id="logoeven">E</span>U<span id="logoeven">B</span>N</div>
-
-        <p>To put it simply. I'm a designer.</p>
-        <div class="face">
-        </div>
     </div>
-    <div id="slide2" class="slide">
+    <!--/.wrapper-->
 
-        <p class="quotes">While I wouldn't consider myself to be a photographer, it's definitely one of hobbies I spend the most time on.</p>
-        <p class="title">Instagram</p>
-        <div class="" id="feedone"></div>
-        <button class="btn btn-large btn-primary" id="instdown">More</button>
+    <div class="footer">
+        Hackpaxy by @adamwhitcroft and @reubn
     </div>
-
-
-
-
-
-    <div id="slide3" class="slide">
-        <p class="quotes">I still have a great deal to learn but here is some of my work.</p>
-        <p class="title">The Web</p>
-        <div class="" id="">
-            <p>Transit</p>
-            <div class="md-device md-device-1">
-                <a href="#">
-                    <img src="img/transit.png" />
-                </a>
-                <div class="md-border-element"></div>
-                <div class="md-base-element"></div>
-            </div>
-
-            <p class="rightt quotes">Transit is a real life game where you run around collecing points in order to keep your self fit and healthy.</p>
-        </div>
-
-
-
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-        <script src="js/instafeed.min.js"></script>
-        <script src="js/script.js"></script>
+    <!--/.footer-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script>
+        $('tr:nth-child(2)').addClass('parent');
+    </script>
 </body>
 
 </html>
+
